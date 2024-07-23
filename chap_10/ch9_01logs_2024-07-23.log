@@ -1,0 +1,4 @@
+ERROR:root:2024-07-23 09:56:52.338168 -<class 'ZeroDivisionError'>- Couldn't divide 100 by 0 due to division by zero in divide_values_better
+ERROR:root:2024-07-23 09:56:52.339201 The return size of the collection does not match passed in collection size. Input: 100 Output: 99 in divide_values_better
+ERROR:root:2024-07-23 09:56:56.106031 -<class 'TypeError'>- Couldn't process the base value 'oops' (unsupported operand type(s) for /: 'str' and 'int') in divide_values_better
+ERROR:root:2024-07-23 09:57:04.579631 -<class 'ZeroDivisionError'>- Applied Placeholder value '0' for dividing 100 by 0 due to division by zero in divide_values_final
