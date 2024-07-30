@@ -3,27 +3,49 @@
 <head>
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ddc77b98-22e4-4592-8485-87aa94702238" data-framework="TCFv2.2" type="text/javascript" async></script>
 <meta charset="utf-8">
-<meta name="csrf-token" content="mLPLPEAbglBV1h00Y1A2yKmIAHHlc9lIgKXYNF0y">
+<meta name="csrf-token" content="CUqvf7MXrFqjLljEOvbVaaIMVNumSa220Gdc7ALx">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Log in - Free Music Archive</title>
+<title>Search music on Free Music Archive - Free Music Archive</title>
+<meta name="description" content="Search for original music and creators on Free Music Archive. You can search by genre, license, duration, instrumental (yes/no), title, album or artist.">
+<meta name="monetization" content="$ilp.gatehub.net/484357631">
 <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
 <link rel="author" href="https://freemusicarchive.org/home">
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.freestar-ads').remove();
-  });
+<link rel="preconnect" href="https://a.pub.network/" crossorigin />
+<link rel="preconnect" href="https://b.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.pub.network/" crossorigin />
+<link rel="preconnect" href="https://d.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://btloader.com/" crossorigin />
+<link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+<link rel="preconnect" href="https://confiant-integrations.global.ssl.fastly.net" crossorigin />
+<link rel="stylesheet" href="https://a.pub.network/freemusicarchive-org/cls.css">
+<script data-cfasync="false" type="text/javascript">
+  var freestar = freestar || {};
+  freestar.queue = freestar.queue || [];
+  freestar.config = freestar.config || {};
+  freestar.config.enabled_slots = [];
+    freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }
 </script>
+<script src="https://a.pub.network/freemusicarchive-org/pubfig.min.js" data-cfasync="false" async></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://freemusicarchive.org/css/app.css?06f6e14196683480998e30c963f076c1f183409acefc771f372df6308b6a295d" media="all">
 <link rel="stylesheet" href="https://freemusicarchive.org/css/player.css?06f6e14196683480998e30c963f076c1f183409acefc771f372df6308b6a295d" media="all">
+<link rel="stylesheet" href="https://freemusicarchive.org/css/search.css?06f6e14196683480998e30c963f076c1f183409acefc771f372df6308b6a295d" media="all">
 </head>
 <body class="m-0 relative bg-white ">
+
+<div align="center" data-freestar-ad="__320x50" id="freemusicarchive_mobile_top" class="top-0 sticky z-50 bg-white md:hidden freestar-ads">
+<script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "freemusicarchive_mobile_top", slotId: "freemusicarchive_mobile_top" });
+    </script>
+</div>
 <div class=" pt-16 md:pt-20  w-full h-full">
 <div id="navigation" class="
-          fixed
+          -mt-16 md:mt-0 relative md:fixed
               top-0 bg-white shadow-sm
         transition-all duration-75 ease-in-out w-screen md:w-full h-16 md:h-20 z-40
   ">
@@ -51,7 +73,7 @@
 <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z" fill="currentColor" />
 </svg>
 </span>
-<input type="text" class="placeholder:text-black/30 border-2 border-transparent rounded transition-all ease-in-out duration-75 px-4 py-3 pl-14 bg-gray-light max-w-full w-96 focus:border-blue" placeholder="Search" id="quicksearch" name="quicksearch" value />
+<input type="text" class="placeholder:text-black/30 border-2 border-transparent rounded transition-all ease-in-out duration-75 px-4 py-3 pl-14 bg-gray-light max-w-full w-96 focus:border-blue" placeholder="Search" id="quicksearch" name="quicksearch" value="Beethoven Sonata No 31 in A Flat Major Op" />
 </div>
 </div>
 </form>
@@ -194,14 +216,14 @@ Sign up
 <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z" fill="currentColor" />
 </svg>
 </span>
-<input type="text" class="placeholder:text-black/30 border-2 border-transparent rounded transition-all ease-in-out duration-75 px-4 py-3 pl-14 bg-gray-light max-w-full w-96 focus:border-blue" placeholder="Search" id="quicksearch" name="quicksearch" value />
+<input type="text" class="placeholder:text-black/30 border-2 border-transparent rounded transition-all ease-in-out duration-75 px-4 py-3 pl-14 bg-gray-light max-w-full w-96 focus:border-blue" placeholder="Search" id="quicksearch" name="quicksearch" value="Beethoven Sonata No 31 in A Flat Major Op" />
 </div>
 </form>
 </div>
 <div class="ml-auto md:order-4 hidden md:inline-flex">
 <ul class="flex gap-2">
 <li>
-<a href="https://freemusicarchive.org/login/" title="Sign in" class="font-medium inline-flex justify-center items-center rounded relative 
+<a href="https://freemusicarchive.org/login/" title="Sign in" type="music" class="font-medium inline-flex justify-center items-center rounded relative 
     px-4 py-2   
   inline-flex transition-colors duration-75 pointer 
   hover:text-blue-100">
@@ -210,7 +232,7 @@ Sign in
 </span>
 </a> </li>
 <li>
-<a href="https://freemusicarchive.org/register/" title="Sign up" class="font-medium inline-flex justify-center items-center rounded relative 
+<a href="https://freemusicarchive.org/register/" title="Sign up" type="music" class="font-medium inline-flex justify-center items-center rounded relative 
     px-4 py-2   
   inline-flex transition-colors duration-75 pointer 
   text-white bg-blue hover:bg-blue-100">
@@ -223,55 +245,343 @@ Sign up
 </nav>
 </div>
 </div>
-<div class="w-full bg-white-100">
-<div class="container">
-<div class="flex flex-col justify-center gap-4 md:gap-4 py-4 md:py-8">
-<div class="inline-flex justify-center md:px-24 lg:px-36">
-<div class="inline-flex w-full max-w-lg mx-auto bg-blue justify-center text-white p-4 md:p-6 rounded font-medium">
-New to FMA?
-<a href="https://freemusicarchive.org/register" class="text-white underline ml-1">
-Sign up
-</a>
-.
+<div class="absolute h-full">
+<div class="top-[80px] sticky hidden 4xl:block freestar-ads">
+
+<div align="center" data-freestar-ad="__300x600" id="freemusicarchive_left_rail">
+<script data-cfasync="false" type="text/javascript">
+          freestar.config.enabled_slots.push({ placementName: "freemusicarchive_left_rail", slotId: "freemusicarchive_left_rail" });
+        </script>
 </div>
 </div>
-<div class="inline-flex justify-center gap-4 md:px-24 lg:px-36 md:gap-12">
-<div class="inline-flex w-full max-w-lg flex-col p-8 bg-white md:p-12 mb-auto mx-auto">
-<h1 class="text-2xl font-[500] mb-6">Sign in to an existing account</h1>
-<form method="POST" action="https://freemusicarchive.org/login">
-<input type="hidden" name="_token" value="mLPLPEAbglBV1h00Y1A2yKmIAHHlc9lIgKXYNF0y"> <fieldset class="flex flex-col gap-4">
-<div class="flex flex-col">
-<label for="email" class="font-medium mb-1.5 ">
-Email address
-</label>
-<input id="email" type="email" class="form-field  border-gray " name="email" value autocomplete="email" placeholder="Email address" required />
 </div>
-<div class="flex flex-col">
-<label for="password" class="font-medium mb-1.5">
-Password
-</label>
-<input id="password" type="password" class="form-field  border-gray " name="password" placeholder="Password" required autocomplete="current-password" />
-<div class="flex items-center mt-3">
-<a class="text-xs text-blue underline transition-all ease-in-out duration-75 decoration-transparent hover:decoration-blue" href="https://freemusicarchive.org/password/reset">
-Forgot your password?
-</a>
-<input class="mr-1.5 ml-auto mt-0.5 cursor-pointer" type="checkbox" name="remember" id="remember" />
-<label class="cursor-pointer text-xs" for="remember">
-Remember me
-</label>
-</div>
-</div>
-<div class="flex flex-col">
-<button href="https://freemusicarchive.org/login/" title="Sign in" type="submit" class="font-medium inline-flex justify-center items-center rounded relative 
-    px-4 py-2   
+<div class="max-w-7xl mx-auto w-full flex flex-col gap-4 px-4 py-8 md:py-12">
+<section class="header-search flex flex-col gap-4">
+<div class="header-search-flex">
+<div class="grid grid-cols-1 gap-4 xl:grid-cols-2 mt-4">
+
+<div class="flex flex-col gap-4 mr-auto w-full">
+<h1 class="text-4xl">
+Search results: <span class="text-blue">1</span> tracks found!
+</h1>
+<div class="header-name-search-container mr-auto mt-auto w-full">
+<div class="flex flex-col md:flex-row w-full justify-center gap-4 relative">
+<span class="relative flex gap-4 w-full md:w-auto">
+<span class="absolute left-5 w-4 top-1/2" style="transform: translateY(-50%)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z" fill="currentColor" />
+</svg>
+</span>
+<input type="text" class="placeholder:text-black/30 border-2 border-transparent rounded transition-all ease-in-out duration-75 px-4 py-3 pl-14 bg-gray-light !w-full md:!w-96 focus:border-blue" placeholder="Search for specific artists, tracks or albums" id="main-search" name="q" value class="header-name-search-input" />
+</span>
+<button title="Search" type="submit" class="font-medium inline-flex justify-center items-center rounded relative 
+    px-5 py-3   
   inline-flex transition-colors duration-75 pointer 
-  text-white mr-auto bg-orange hover:bg-orange-100">
+  text-white bg-orange hover:bg-orange-100 !w-full md:!w-auto !px-7 !mr-auto js-search-execute">
 <span class="text">
-Sign in
+Search
 </span>
 </button> </div>
+</div>
+<div class="filter-labels js-filter-labels flex gap-2 flex-wrap"></div>
+</div>
+
+<div class="flex flex-col gap-2 xl:mt-5 mb-auto w-full">
+<div class="flex flex-col gap-2 mr-auto ml-0 xl:mr-0 xl:ml-auto">
+<span class="font-[600] text-lg mr-auto mt-auto">
+Filters
+</span>
+<div class="flex gap-2 flex-wrap w-full">
+
+<div class="header-search-filter-container">
+<button class="header-search-filter-button header-search-switch js-instrumental-switch">
+<div class="header-search-switch-split pointer-events-none inline-flex justify-center items-center px-4">All</div>
+<div class="header-icon header-search-filter-button-icon inline-flex justify-center items-center px-4">
+Instrumental
+</div>
+</button>
+</div>
+
+
+<div class="js-dropdown dropdown header-search-filter-container">
+<button class="js-dropdown-toggle header-search-filter-button">
+<div class="header-search-filter-button-txt">License</div>
+<span class="inline-flex w-6 mr-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z" fill="currentColor" />
+</svg>
+</span>
+</button>
+<div class="dropdown-content js-license">
+<div class="header-license-column d-inline-block f-left">
+<p class="mb-4 font-[600]">Usage:</p>
+<fieldset id="license-type">
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-public-domain" name="license-type">
+<label for="music-filter-public-domain">Public Domain</label>
+</div>
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-commercial-allowed" name="license-type">
+<label for="music-filter-commercial-allowed">Commercial Use</label>
+</div>
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-remix-allowed" name="license-type">
+<label for="music-filter-remix-allowed">Use in a Remix or Video</label>
+</div>
 </fieldset>
-</form>
+</div>
+<div class="header-license-column d-inline-block f-left">
+<p class="mb-4 font-[600]">Include CC license:</p>
+<fieldset id="license-cc">
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-CC-attribution-only" name="cc-by">
+<label for="music-filter-CC-attribution-only">CC BY</label>
+</div>
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-CC-attribution-sharealike" name="cc-by">
+<label for="music-filter-CC-attribution-sharealike">CC BY SA</label>
+</div>
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-CC-attribution-noderivatives" name="cc-by">
+<label for="music-filter-CC-attribution-noderivatives">CC BY ND</label>
+</div>
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-CC-attribution-noncommercial" name="cc-by">
+<label for="music-filter-CC-attribution-noncommercial">CC BY NC</label>
+</div>
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-CC-attribution-noncommercial-sharealike" name="cc-by">
+<label for="music-filter-CC-attribution-noncommercial-sharealike">CC BY NC SA</label>
+</div>
+<div class="header-input-container">
+<input type="checkbox" id="music-filter-CC-attribution-noncommercial-noderivatives" name="cc-by">
+<label for="music-filter-CC-attribution-noncommercial-noderivatives">CC BY NC ND</label>
+</div>
+</fieldset>
+<a href="https://www.freemusicarchive.org/License_Guide" target="_blank" class="m-top d-block">CC License
+Guide</a>
+</div>
+</div>
+</div>
+
+
+<div class="js-dropdown dropdown header-search-filter-container">
+<button class="js-dropdown-toggle header-search-filter-button">
+<div class="header-search-filter-button-txt">Genre</div>
+<span class="inline-flex w-6 mr-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z" fill="currentColor" />
+</svg>
+</span>
+</button>
+<div class="dropdown-content">
+<span class="font-[600] text-lg mb-4">Select genres</span>
+<div class="header-search-genres js-genres">
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Blues</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Electronic</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Hip-Hop</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Jazz</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Rock</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Classical</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Experimental</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Instrumental</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Old-Time/Historic</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Soul-RnB</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Country</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Folk</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">International</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Pop</div>
+<div class="js-genre header-search-genre underline decoration-transparent transition-all duration-75 ease-in-out">Spoken</div>
+<div class="cf"></div>
+</div>
+<div class="cf"></div>
+<input type="text" readonly value class="header-search-genre-input js-header-search-genre-input">
+<div class="header-search-controls">
+<div class="header-search-controls-btn-container">
+<button type="button" class="js-toggle-all-genres js-select-all-genres">Select All</button>
+</div>
+<div class="header-search-controls-btn-container">
+<button type="button" class="js-toggle-all-genres js-deselect-all-genres">Deselect All</button>
+</div>
+<div class="header-search-controls-btn-container">
+<button type="button" class="js-close-dropdowns">Ok</button>
+</div>
+<div class="cf"></div>
+</div>
+</div>
+</div>
+
+
+<div class="js-dropdown dropdown header-search-filter-container header-search-filter-more rounded">
+<button class="js-dropdown-toggle header-search-filter-button flex items-center justify-center">
+<div class="header-search-filter-button-txt">Duration</div>
+<span class="inline-flex w-6 mr-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z" fill="currentColor" />
+</svg>
+</span>
+</button>
+<div class="dropdown-content">
+<p class="font-[600] mb-8">Duration (minutes)</p>
+<div class="slider-duration-container">
+<input id="slider-duration" type="text" />
+</div>
+
+<div class="slider-tempo-container" style="display:none;">
+<input id="slider-tempo" type="text" />
+</div>
+<div class="header-search-controls mt-8">
+<button type="button" class="js-close-dropdowns width-auto f-right">
+Ok
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="js-labels-controls hide cms ml-auto flex gap-2 flex-wrap mt-2">
+<button class="button button--orange js-clear-search">Clear filters</button>
+<button class="button js-apply-filters">Apply filters</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="colset-c">
+<div class="flex flex-col w-full">
+<div class="inline-flex ml-auto mt-4 max-w-7xl mr-auto w-full">
+<div class="flex w-full">
+<select name="sort" class="w-auto ml-auto" id="genre-sort">
+<option value>Sort By</option>
+<option value="https://freemusicarchive.org/search?quicksearch=Beethoven%20Sonata%20No%2031%20in%20A%20Flat%20Major%20Op&amp;pageSize=20&amp;page=1&amp;sort=date&amp;d=0">
+Date Added
+</option>
+<option value="https://freemusicarchive.org/search?quicksearch=Beethoven%20Sonata%20No%2031%20in%20A%20Flat%20Major%20Op&amp;pageSize=20&amp;page=1&amp;sort=_score&amp;d=0" selected>
+Most Interesting
+</option>
+<option value="https://freemusicarchive.org/search?quicksearch=Beethoven%20Sonata%20No%2031%20in%20A%20Flat%20Major%20Op&amp;pageSize=20&amp;page=1&amp;sort=artist&amp;d=1">
+Artist (A-Z)
+</option>
+<option value="https://freemusicarchive.org/search?quicksearch=Beethoven%20Sonata%20No%2031%20in%20A%20Flat%20Major%20Op&amp;pageSize=20&amp;page=1&amp;sort=artist&amp;d=0">
+Artist (Z-A)
+</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col mt-4 max-w-7xl mx-auto">
+<div class="grid grid-cols-3 md:grid-cols-10 pl-16 pr-2 items-center py-2 bg-blue text-white rounded w-full">
+<span class="inline-flex w-full col-span-2 md:col-span-4">
+<a href="https://freemusicarchive.org/search?quicksearch=Beethoven%20Sonata%20No%2031%20in%20A%20Flat%20Major%20Op&amp;pageSize=20&amp;page=1&amp;sort=track&amp;d=1" class="sortarr-up font-[500]">
+Track
+</a>
+</span>
+<span class="ptxt-album  !hidden md:!flex col-span-2 ">
+<a href="https://freemusicarchive.org/search?quicksearch=Beethoven%20Sonata%20No%2031%20in%20A%20Flat%20Major%20Op&amp;pageSize=20&amp;page=1&amp;sort=album&amp;d=1" class="sortarr-up font-[500]">
+Album
+</a>
+</span>
+<span class="ptxt-genres  !hidden md:!flex col-span-3 ">
+Genres
+</span>
+<span class="ptxt-duration  col-span-1 ">
+Duration
+</span>
+</div>
+<div class="w-full flex flex-col gap-3 pt-3">
+<div class="play-item justify-center items-center relative bg-[#F8F8F8] gcol grid grid-cols-3 md:grid-cols-10 pl-16 pr-2 py-3 w-full gid-electronic tid-11374" data-track-info="{&quot;id&quot;:&quot;11374&quot;,&quot;handle&quot;:&quot;Beethoven_-_Sonata_No_31_in_A_Flat_Major_Op_110_-_I_Moderato_cantabile_molto_espressivo&quot;,&quot;url&quot;:&quot;https:\/\/freemusicarchive.org\/music\/Carlos_Gardels\/Beethovens_Sonata_No_31_in_A_Flat_Major\/Beethoven_-_Sonata_No_31_in_A_Flat_Major_Op_110_-_I_Moderato_cantabile_molto_espressivo\/&quot;,&quot;title&quot;:&quot;Beethoven - Sonata No. 31 in A Flat Major, Op. 110 - I, Moderato cantabile molto espressivo&quot;,&quot;artistName&quot;:&quot;Carlos Gardels&quot;,&quot;artistUrl&quot;:&quot;https:\/\/freemusicarchive.org\/music\/Carlos_Gardels\/&quot;,&quot;playbackUrl&quot;:&quot;https:\/\/freemusicarchive.org\/track\/Beethoven_-_Sonata_No_31_in_A_Flat_Major_Op_110_-_I_Moderato_cantabile_molto_espressivo\/stream\/&quot;,&quot;downloadUrl&quot;:&quot;https:\/\/freemusicarchive.org\/track\/Beethoven_-_Sonata_No_31_in_A_Flat_Major_Op_110_-_I_Moderato_cantabile_molto_espressivo\/download\/&quot;}">
+<span class="absolute inline-flex left-4 top-0 bottom-0 big-play">
+<span class="doplay"><a href="#" class="playbtn" title="Play"></a></span>
+</span>
+<span class="flex flex-col col-span-2 md:col-span-4 truncate text-ellipsis overflow-hidden pr-8">
+<span class="ptxt-track">
+<a href="https://freemusicarchive.org/music/Carlos_Gardels/Beethovens_Sonata_No_31_in_A_Flat_Major/Beethoven_-_Sonata_No_31_in_A_Flat_Major_Op_110_-_I_Moderato_cantabile_molto_espressivo/" class="font-bold">
+Beethoven - Sonata No. 31 in A Flat Major, Op. 110 - I, Moderato cantabile molto espressivo
+</a>
+</span>
+<span class="ptxt-artist truncate text-ellipsis overflow-hidden">
+<span>
+by
+</span>
+<a href="https://freemusicarchive.org/music/Carlos_Gardels/" class="font-[500]">
+Carlos Gardels
+</a>
+</span>
+</span>
+<span class="!hidden md:!flex ptxt-album col-span-2 truncate text-ellipsis overflow-hidden pr-8">
+<a href="https://freemusicarchive.org/music/Carlos_Gardels/Beethovens_Sonata_No_31_in_A_Flat_Major">
+Beethoven&#039;s Sonata No. 31 in A Flat Major
+</a>
+</span>
+<span class="ptxt-genre truncate text-ellipsis !hidden md:!flex pr-12 overflow-hidden col-span-3">
+<a href="https://freemusicarchive.org/genre/Classical/">Classical</a>
+</span>
+<span class="inline-flex items-center col-span-1 align-self-end pl-6">
+06:34
+</span>
+<span class="absolute inline-flex bg-gray-light z-10 pl-4 !pr-4 gap-4 right-0 top-0 bottom-0 opacity-0 invisible transition-opacity duration-75 ease-in-out controls">
+<a href="javascript:;" class="inline-flex justify-center items-center js-download w-4 transition-colors ease-in-out duration-75 hover:text-blue" data-url="https://freemusicarchive.org/track/Beethoven_-_Sonata_No_31_in_A_Flat_Major_Op_110_-_I_Moderato_cantabile_molto_espressivo/downloadOverlay/" title="Download">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.596 24.363" class="w-4">
+<g data-name="Icon feather-arrow-down" fill="none" stroke="currentColor">
+<path data-name="Path 663" d="M10.689 0v17.848" stroke-linejoin="round" stroke-width="2.7" />
+<path data-name="Path 664" d="m19.613 8.924-8.924 8.924-8.924-8.924" stroke-linejoin="round" stroke-width="2.7" />
+<path data-name="Line 121" stroke-linecap="round" stroke-width="2.6" d="M1.3 23.063h18.996" />
+</g>
+</svg>
+</a>
+<a href="#" class="inline-flex justify-center items-center add-to-mix" title="Add to Mix">
+<span class="inline-flex justify-center items-center w-4 transition-colors ease-in-out duration-75 hover:text-blue">
+<svg data-name="Icon feather-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.049 22.049">
+<path data-name="Path 668" d="M11.025 0v22.049" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3" />
+<path data-name="Path 669" d="M0 11.025h22.049" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3" />
+</svg>
+</span>
+</a> <a href="https://freemusicarchive.org/login/" class="transition-colors inline-flex justify-center items-center ease-in-out duration-75 hover:text-blue">
+<span>
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5" viewBox="0 0 24.963 22.118">
+<path data-name="Icon feather-heart" d="M21.896 3.067a5.858 5.858 0 0 0-8.286 0l-1.129 1.129-1.129-1.129a5.86 5.86 0 1 0-8.286 8.286l1.129 1.129 8.286 8.286 8.286-8.286 1.129-1.129a5.858 5.858 0 0 0 0-8.286Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" />
+</svg> </span>
+</a>
+</span>
+</div>
+</div>
+</div>
+<div class="pagination-full flex flex-wrap gap-4 mt-4">
+<div class="flex mr-auto items-center">
+<span class="flex gap-1">
+<b>1</b>
+-
+<b>1</b>
+of
+<b>1</b>
+</span>
+<span class="mr-auto" style="margin-left: 10px">
+<select class="per_page">
+<option value="15">
+15
+</option>
+<option value="20" selected>
+20
+</option>
+<option value="25">
+25
+</option>
+<option value="50">
+50
+</option>
+<option value="100">
+100
+</option>
+<option value="200">
+200
+</option>
+</select>
+</span>
+</div>
+<div class="font-[500] flex flex-wrap items-center gap-1">
+<span class="bg-blue text-white">
+1
+</span>
 </div>
 </div>
 </div>
@@ -492,6 +802,7 @@ Privacy policy
 </div>
 </footer> </div>
 <script src="https://freemusicarchive.org/js/front-end/main.js?06f6e14196683480998e30c963f076c1f183409acefc771f372df6308b6a295d" defer></script>
+<script src="https://freemusicarchive.org/js/search/main.js?06f6e14196683480998e30c963f076c1f183409acefc771f372df6308b6a295d" async></script>
 
 <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-148153981-1"></script>
 <script>
